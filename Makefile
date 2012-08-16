@@ -20,6 +20,9 @@ all: $(OUT)
 clean:
 	rm -f $(OUT) $(OBJ)
 
+tags:
+	ctags -R .
+
 ####
 
 $(OUT): $(OBJ)
